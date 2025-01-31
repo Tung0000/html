@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าถัดไป</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+        .container {
+            background:rgb(112, 190, 238
+            );
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: rgb(10, 47, 129
+            );
+            font-size: 40px;
+        }
+        .back-button {
+            background-color:  rgb(13,153,255
+            );
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>สมัครสมาชิกสำเร็จ!</h1>
+        <p>ขอบคุณที่สมัครสมาชิกคุณสามารถเริ่มใช้งานได้เลย</p>
+        <button class="back-button" onclick="goHome()">กลับไปหน้าแรก</button>
+    </div>
+
+    <script>
+        function goHome() {
+            window.location.href = "index.html"; // เปลี่ยนไปหน้าแรกของเว็บ
+        }
+    </script>
+</body>
+</html>
