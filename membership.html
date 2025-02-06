@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>สมัครสมาชิก</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Shojumaru', cursive;
+            justify-content: space-between;
+        }
+
+        .header,
+        .footer {
+            background-color: rgb(0, 113, 183);
+            color: white;
+            padding: 35px;
+            font-size: 40px;
+            font-weight: bold;
+            width: 120%;
+            text-align: center;
+            border-radius: 15%;
+        }
+
+        .footer {
+            color: transparent;
+            border-radius: 15%;
         }
 
         body {
             background-color: #f5f5f5;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+
         }
 
         .back-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: #007ccf;
+            background-color: rgb(0, 155, 251);
             color: white;
-            padding: 15 px 19px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 20px;
+            text-align: center;
+            width: 20%;
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            width: 10%;
         }
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            background-color: rgb(112, 190, 238
-            );
+            margin: 20px auto;
+            background-color: rgb(112, 190, 238);
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            color: #ffffff;
-            background-color: rgb(0, 113, 183
-            );
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 113, 183);
             text-align: center;
             margin-bottom: 30px;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
         }
-        
+
         .intro-text {
             text-align: center;
             margin-bottom: 30px;
             font-size: 30px;
             line-height: 1.6;
-            color: rgb(10, 47, 129
-                        );
+            color: rgb(10, 47, 129);
         }
 
         .form-group {
@@ -67,10 +93,11 @@
             font-weight: 500;
         }
 
-        input, select {
+        input,
+        select {
             width: 100%;
             padding: 10px;
-            border: 1px solid #007ccf;
+            border: 1px solid rgb(0, 124, 207);
             border-radius: 5px;
             font-size: 16px;
         }
@@ -85,8 +112,7 @@
         }
 
         button {
-            background-color: rgb(13,153,255
-                        );
+            background-color: rgb(13, 153, 255);
             color: white;
             padding: 12px 24px;
             border: none;
@@ -98,19 +124,19 @@
         }
 
         button:hover {
-            background-color: rgb(10, 47, 129
-                        );
+            background-color: rgb(10, 47, 129);
         }
     </style>
 </head>
+
 <body>
+    <div class="header">MEGA MARKET</div>
     <button class="back-button" onclick="goBack()">ย้อนกลับ</button>
     <div class="container">
-        <h1>MEGA MARKET</h1>
         <div class="intro-text">
             <p>สมัครสมาชิก</p>
         </div>
-        
+
         <form id="register-form">
             <div class="form-group">
                 <label>ชื่อของคุณ</label>
@@ -139,7 +165,7 @@
                         <input type="text" placeholder="กรุณากรอกตําบล/อําเภอ" required>
                     </div>
                 </div>
-                
+
                 <div class="col">
                     <div class="form-group">
                         <label>จังหวัด / รหัสไปรษณีย์</label>
@@ -151,15 +177,17 @@
             <button type="submit">สมัครสมาชิก</button>
         </form>
     </div>
-    
+    <div class="footer"></div>
+
     <script>
         function goBack() {
             window.history.back();
         }
-        
-        document.getElementById("register-form").addEventListener("submit", function(event) {
+
+        document.getElementById("register-form").addEventListener("submit", function (event) {
             event.preventDefault(); // ป้องกันการโหลดหน้าใหม่
         });
     </script>
 </body>
+
 </html>

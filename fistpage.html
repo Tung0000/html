@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>หน้าแรก</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
+            font-family: 'Shojumaru', cursive;
+            background-color: rgb(255, 255, 255);
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,31 +18,39 @@
             height: 100vh;
             justify-content: space-between;
         }
-        .header, .footer {
+
+        .header,
+        .footer {
             background-color: rgb(0, 113, 183);
             color: white;
-            padding: 15px;
-            font-size: 25px;
+            padding: 35px;
+            font-size: 40px;
             font-weight: bold;
             width: 100%;
             text-align: center;
+            border-radius: 50px;
         }
+
         .footer {
-            color: transparent;
+            color: rgb(0, 113, 183);
+            border-radius: 50px;
         }
+
         .container {
             background-color: white;
             width: 550px;
             text-align: center;
-            border-radius: 11px;
+            border-radius: 50px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             padding: 25px;
-            font-size: 20px;
-            color: rgb(0, 113,183);
+            font-size: 25px;
+            color: rgb(0, 113, 183);
         }
+
         .content {
-            padding: 25px;
+            padding: 0px;
         }
+
         .btn {
             display: block;
             width: 100%;
@@ -49,25 +59,33 @@
             background-color: #007BFF;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 20px;
             font-size: 25px;
         }
+
         .btn:hover {
             background-color: #0056b3;
         }
+
         .small-text {
             font-size: 15px;
             color: #666;
+            font-family: 'Shojumaru', cursive;
         }
+
         .small-text a {
             color: #007BFF;
             text-decoration: none;
+            font-family: 'Shojumaru', cursive;
         }
+
         .small-text a:hover {
             text-decoration: underline;
+            font-family: 'Shojumaru', cursive;
         }
     </style>
 </head>
+
 <body>
     <div class="header">MEGA MARKET</div>
     <div class="container">
@@ -81,4 +99,5 @@
     </div>
     <div class="footer">.</div>
 </body>
+
 </html>
